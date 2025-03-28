@@ -116,7 +116,7 @@ rubBtn.addEventListener("click", rub)
 function clear() { 
     input.value = ""
     console.log("f");
-    
+    resultDiv.textContent = "Итоговый расчет"
 }   
 
 clearBtn.addEventListener("click", clear)
