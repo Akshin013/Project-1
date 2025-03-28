@@ -80,7 +80,7 @@ function eur(){
         console.log(e);
         resultDiv.textContent = e
     }else if (resultcCurrency.includes("RUB")){
-        let e = num * 0.92
+        let e = num * 92
         console.log(e);
         resultDiv.textContent = e
     }else{
@@ -98,7 +98,7 @@ function rub(){
         console.log(e);
         resultDiv.textContent = e
     }else if (resultcCurrency.includes("EUR")){
-    let e = num * 1.08
+    let e = num * 108
     console.log(e);
     resultDiv.textContent = e
     }else{
