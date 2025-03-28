@@ -61,10 +61,26 @@ function usd(){
         let e = num * 0.92
         console.log(e);
         resultDiv.textContent = e
+        if (e !== NaN) {
+            console.log("nan");
+            alert("Введите число!")
+            input.value = ""
+        }else{
+            resultDiv.textContent = e
+            console.log("nn");   
+        }
     }else if (resultcCurrency.includes("RUB")) {
         let e = num * 0.0118
         console.log(e);
         resultDiv.textContent = e
+        if (e !== NaN) {
+            console.log("nan");
+            alert("Введите число!")
+            input.value = ""
+        }else{
+            resultDiv.textContent = e
+            console.log("nn");   
+        }
     }else{
         resultDiv.textContent = "Выберите другую валюту!"
     }
@@ -79,10 +95,26 @@ function eur(){
         let e = num * 1.08
         console.log(e);
         resultDiv.textContent = e
+        if (e !== NaN) {
+            console.log("nan");
+            alert("Введите число!")
+            input.value = ""
+        }else{
+            resultDiv.textContent = e
+            console.log("nn");   
+        }
     }else if (resultcCurrency.includes("RUB")){
         let e = num * 92
         console.log(e);
         resultDiv.textContent = e
+        if (e !== NaN) {
+            console.log("nan");
+            alert("Введите число!")
+            input.value = ""
+        }else{
+            resultDiv.textContent = e
+            console.log("nn");   
+        }
     }else{
         resultDiv.textContent = "Выберите другую валюту!"
     }
@@ -97,10 +129,30 @@ function rub(){
         let e = num * 84.21
         console.log(e);
         resultDiv.textContent = e
+
+        if (e !== NaN) {
+            console.log("nan");
+            alert("Введите число!")
+            input.value = ""
+        }else{
+            resultDiv.textContent = e
+            console.log("nn");   
+        }
+
     }else if (resultcCurrency.includes("EUR")){
     let e = num * 108
     console.log(e);
     resultDiv.textContent = e
+
+    if (e !== NaN) {
+        console.log("nan");
+        alert("Введите число!")
+        input.value = ""
+    }else{
+        resultDiv.textContent = e
+        console.log("nn");   
+    }
+
     }else{
         resultDiv.textContent = "Выберите другую валюту!"
     }
@@ -108,10 +160,11 @@ function rub(){
 rubBtn.addEventListener("click", rub)
 
 
-function clear() {
+
+function clear() { 
     input.value = ""
+    console.log("f");
+    
 }   
 
 clearBtn.addEventListener("click", clear)
-
-
