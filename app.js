@@ -109,9 +109,7 @@ rubBtn.addEventListener("click", rub)
 
 
 function clear() {
-    input.value = " "
-    console.log("f");
-    
+    input.value = ""
 }   
 
 clearBtn.addEventListener("click", clear)
