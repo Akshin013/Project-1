@@ -10,7 +10,7 @@ const usdBtn = document.getElementById("usd-btn")
 const eurBtn = document.getElementById("eur-btn")
 const rubBtn = document.getElementById("rub-btn")
 
-
+const clearBtn = document.querySelector(".clear-btn")
 
 let resultcCurrency = 0
 let num = 0
