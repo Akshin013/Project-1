@@ -15,8 +15,10 @@ const clearBtn = document.querySelector(".clear-btn")
 let resultcCurrency = 0
 let num = 0
 
+
 function addUSD() {
     num= input.value
+
     let a = input.value += " USD"
 
     console.log(a);
@@ -60,27 +62,11 @@ function usd(){
         // console.log("net");
         let e = num * 0.92
         console.log(e);
-        resultDiv.textContent = e
-        if (e !== NaN) {
-            console.log("nan");
-            alert("Введите число!")
-            input.value = ""
-        }else{
-            resultDiv.textContent = e
-            console.log("nn");   
-        }
+        resultDiv.textContent = e + " USD"
     }else if (resultcCurrency.includes("RUB")) {
         let e = num * 0.0118
         console.log(e);
-        resultDiv.textContent = e
-        if (e !== NaN) {
-            console.log("nan");
-            alert("Введите число!")
-            input.value = ""
-        }else{
-            resultDiv.textContent = e
-            console.log("nn");   
-        }
+        resultDiv.textContent = e + " USD"
     }else{
         resultDiv.textContent = "Выберите другую валюту!"
     }
@@ -94,27 +80,11 @@ function eur(){
     if (resultcCurrency.includes("USD")) {
         let e = num * 1.08
         console.log(e);
-        resultDiv.textContent = e
-        if (e !== NaN) {
-            console.log("nan");
-            alert("Введите число!")
-            input.value = ""
-        }else{
-            resultDiv.textContent = e
-            console.log("nn");   
-        }
+        resultDiv.textContent = e + " EUR"
     }else if (resultcCurrency.includes("RUB")){
         let e = num * 92
         console.log(e);
-        resultDiv.textContent = e
-        if (e !== NaN) {
-            console.log("nan");
-            alert("Введите число!")
-            input.value = ""
-        }else{
-            resultDiv.textContent = e
-            console.log("nn");   
-        }
+        resultDiv.textContent = e + " EUR"
     }else{
         resultDiv.textContent = "Выберите другую валюту!"
     }
@@ -128,31 +98,13 @@ function rub(){
     if (resultcCurrency.includes("USD")) {
         let e = num * 84.21
         console.log(e);
-        resultDiv.textContent = e
-
-        if (e !== NaN) {
-            console.log("nan");
-            alert("Введите число!")
-            input.value = ""
-        }else{
-            resultDiv.textContent = e
-            console.log("nn");   
-        }
+        resultDiv.textContent = e + " RUB"
 
     }else if (resultcCurrency.includes("EUR")){
     let e = num * 108
     console.log(e);
-    resultDiv.textContent = e
-
-    if (e !== NaN) {
-        console.log("nan");
-        alert("Введите число!")
-        input.value = ""
-    }else{
-        resultDiv.textContent = e
-        console.log("nn");   
-    }
-
+    resultDiv.textContent = e + " RUB"
+  
     }else{
         resultDiv.textContent = "Выберите другую валюту!"
     }
